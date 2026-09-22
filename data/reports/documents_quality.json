@@ -1,0 +1,29 @@
+{
+    "dataset": "documents",
+    "source_file": "1788762865915-d9b538e7-documents.xlsx",
+    "processed_at": "2026-09-10T15:52:17.082592",
+    "status": "SUCCESS",
+    "original_rows": 1585,
+    "final_rows": 1584,
+    "original_columns": 4,
+    "final_columns": 4,
+    "empty_rows_removed": 0,
+    "duplicate_rows_removed": 1,
+    "missing_cells": 52,
+    "missing_percentage": 0.82,
+    "columns": [
+        "id",
+        "company_id",
+        "year",
+        "annual_report"
+    ],
+    "missing_by_column": {
+        "annual_report": {
+            "missing": 52,
+            "percentage": 3.28
+        }
+    },
+    "csv_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\documents_clean.csv",
+    "parquet_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\documents_clean.parquet",
+    "parquet_status": "created"
+}

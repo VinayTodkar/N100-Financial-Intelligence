@@ -1,0 +1,33 @@
+{
+    "dataset": "pros_cons",
+    "source_file": "1788762867755-c9667c6b-prosandcons.xlsx",
+    "processed_at": "2026-09-10T15:52:19.949679",
+    "status": "SUCCESS",
+    "original_rows": 16,
+    "final_rows": 16,
+    "original_columns": 4,
+    "final_columns": 4,
+    "empty_rows_removed": 0,
+    "duplicate_rows_removed": 0,
+    "missing_cells": 6,
+    "missing_percentage": 9.38,
+    "columns": [
+        "id",
+        "company_id",
+        "pros",
+        "cons"
+    ],
+    "missing_by_column": {
+        "pros": {
+            "missing": 5,
+            "percentage": 31.25
+        },
+        "cons": {
+            "missing": 1,
+            "percentage": 6.25
+        }
+    },
+    "csv_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\pros_cons_clean.csv",
+    "parquet_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\pros_cons_clean.parquet",
+    "parquet_status": "created"
+}

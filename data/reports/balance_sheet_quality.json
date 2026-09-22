@@ -1,0 +1,33 @@
+{
+    "dataset": "balance_sheet",
+    "source_file": "1788762864608-bfd01cdc-balancesheet.xlsx",
+    "processed_at": "2026-09-10T15:52:14.602197",
+    "status": "SUCCESS",
+    "original_rows": 1312,
+    "final_rows": 1137,
+    "original_columns": 13,
+    "final_columns": 13,
+    "empty_rows_removed": 0,
+    "duplicate_rows_removed": 175,
+    "missing_cells": 0,
+    "missing_percentage": 0.0,
+    "columns": [
+        "id",
+        "company_id",
+        "year",
+        "equity_capital",
+        "reserves",
+        "borrowings",
+        "other_liabilities",
+        "total_liabilities",
+        "fixed_assets",
+        "capital_work_in_progress",
+        "investments",
+        "other_assets",
+        "total_assets"
+    ],
+    "missing_by_column": {},
+    "csv_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\balance_sheet_clean.csv",
+    "parquet_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\balance_sheet_clean.parquet",
+    "parquet_status": "created"
+}

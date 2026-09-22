@@ -1,0 +1,44 @@
+{
+    "dataset": "cash_flow",
+    "source_file": "1788762864958-0ce02a2d-cashflow.xlsx",
+    "processed_at": "2026-09-10T15:52:15.034697",
+    "status": "SUCCESS",
+    "original_rows": 1187,
+    "final_rows": 1153,
+    "original_columns": 7,
+    "final_columns": 7,
+    "empty_rows_removed": 0,
+    "duplicate_rows_removed": 34,
+    "missing_cells": 8,
+    "missing_percentage": 0.1,
+    "columns": [
+        "id",
+        "company_id",
+        "year",
+        "operating_cash_flow",
+        "investing_cash_flow",
+        "financing_cash_flow",
+        "net_cash_flow"
+    ],
+    "missing_by_column": {
+        "operating_cash_flow": {
+            "missing": 2,
+            "percentage": 0.17
+        },
+        "investing_cash_flow": {
+            "missing": 2,
+            "percentage": 0.17
+        },
+        "financing_cash_flow": {
+            "missing": 2,
+            "percentage": 0.17
+        },
+        "net_cash_flow": {
+            "missing": 2,
+            "percentage": 0.17
+        }
+    },
+    "csv_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\cash_flow_clean.csv",
+    "parquet_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\cash_flow_clean.parquet",
+    "parquet_status": "created"
+}

@@ -1,0 +1,65 @@
+{
+    "dataset": "companies",
+    "source_file": "1788762865623-4d1eef48-companies.xlsx",
+    "processed_at": "2026-09-10T15:52:15.917634",
+    "status": "SUCCESS",
+    "original_rows": 92,
+    "final_rows": 92,
+    "original_columns": 12,
+    "final_columns": 12,
+    "empty_rows_removed": 0,
+    "duplicate_rows_removed": 0,
+    "missing_cells": 9,
+    "missing_percentage": 0.82,
+    "columns": [
+        "id",
+        "company_logo",
+        "company_name",
+        "chart_link",
+        "about_company",
+        "website",
+        "nse_profile",
+        "bse_profile",
+        "face_value",
+        "book_value",
+        "roce_percentage",
+        "roe_percentage"
+    ],
+    "missing_by_column": {
+        "company_logo": {
+            "missing": 1,
+            "percentage": 1.09
+        },
+        "website": {
+            "missing": 1,
+            "percentage": 1.09
+        },
+        "nse_profile": {
+            "missing": 1,
+            "percentage": 1.09
+        },
+        "bse_profile": {
+            "missing": 1,
+            "percentage": 1.09
+        },
+        "face_value": {
+            "missing": 1,
+            "percentage": 1.09
+        },
+        "book_value": {
+            "missing": 1,
+            "percentage": 1.09
+        },
+        "roce_percentage": {
+            "missing": 1,
+            "percentage": 1.09
+        },
+        "roe_percentage": {
+            "missing": 2,
+            "percentage": 2.17
+        }
+    },
+    "csv_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\companies_clean.csv",
+    "parquet_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\companies_clean.parquet",
+    "parquet_status": "created"
+}

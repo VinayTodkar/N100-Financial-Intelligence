@@ -1,0 +1,707 @@
+{
+    "generated_at": "2026-09-22T13:03:20.959172",
+    "datasets": {
+        "companies": {
+            "rows": 92,
+            "columns": 12,
+            "missing_cells": 9,
+            "duplicate_rows": 0,
+            "columns_list": [
+                "id",
+                "company_logo",
+                "company_name",
+                "chart_link",
+                "about_company",
+                "website",
+                "nse_profile",
+                "bse_profile",
+                "face_value",
+                "book_value",
+                "roce_percentage",
+                "roe_percentage"
+            ]
+        },
+        "sectors": {
+            "rows": 92,
+            "columns": 6,
+            "missing_cells": 0,
+            "duplicate_rows": 0,
+            "columns_list": [
+                "id",
+                "company_id",
+                "broad_sector",
+                "sub_sector",
+                "index_weight_pct",
+                "market_cap_category"
+            ]
+        },
+        "peer_groups": {
+            "rows": 56,
+            "columns": 4,
+            "missing_cells": 0,
+            "duplicate_rows": 0,
+            "columns_list": [
+                "id",
+                "peer_group_name",
+                "company_id",
+                "is_benchmark"
+            ]
+        },
+        "analysis": {
+            "rows": 20,
+            "columns": 6,
+            "missing_cells": 0,
+            "duplicate_rows": 0,
+            "columns_list": [
+                "id",
+                "company_id",
+                "compounded_sales_growth",
+                "compounded_profit_growth",
+                "stock_price_cagr",
+                "roe"
+            ]
+        },
+        "balance_sheet": {
+            "rows": 1137,
+            "columns": 13,
+            "missing_cells": 0,
+            "duplicate_rows": 0,
+            "columns_list": [
+                "id",
+                "company_id",
+                "year",
+                "equity_capital",
+                "reserves",
+                "borrowings",
+                "other_liabilities",
+                "total_liabilities",
+                "fixed_assets",
+                "capital_work_in_progress",
+                "investments",
+                "other_assets",
+                "total_assets"
+            ]
+        },
+        "cash_flow": {
+            "rows": 1153,
+            "columns": 7,
+            "missing_cells": 8,
+            "duplicate_rows": 0,
+            "columns_list": [
+                "id",
+                "company_id",
+                "year",
+                "operating_cash_flow",
+                "investing_cash_flow",
+                "financing_cash_flow",
+                "net_cash_flow"
+            ]
+        },
+        "financial_ratios": {
+            "rows": 1065,
+            "columns": 16,
+            "missing_cells": 72,
+            "duplicate_rows": 0,
+            "columns_list": [
+                "id",
+                "company_id",
+                "year",
+                "net_profit_margin_pct",
+                "operating_profit_margin_pct",
+                "return_on_equity_pct",
+                "debt_to_equity",
+                "interest_coverage",
+                "asset_turnover",
+                "free_cash_flow_cr",
+                "capex_cr",
+                "earnings_per_share",
+                "book_value_per_share",
+                "dividend_payout_ratio_pct",
+                "total_debt_cr",
+                "cash_from_operations_cr"
+            ]
+        },
+        "market_cap": {
+            "rows": 552,
+            "columns": 9,
+            "missing_cells": 0,
+            "duplicate_rows": 0,
+            "columns_list": [
+                "id",
+                "company_id",
+                "year",
+                "market_cap_crore",
+                "enterprise_value_crore",
+                "pe_ratio",
+                "pb_ratio",
+                "ev_ebitda",
+                "dividend_yield_pct"
+            ]
+        },
+        "profit_loss": {
+            "rows": 1263,
+            "columns": 15,
+            "missing_cells": 328,
+            "duplicate_rows": 0,
+            "columns_list": [
+                "id",
+                "company_id",
+                "year",
+                "sales",
+                "expenses",
+                "operating_profit",
+                "operating_profit_margin_pct",
+                "other_income",
+                "interest_expense",
+                "depreciation",
+                "profit_before_tax",
+                "tax_percentage",
+                "net_profit",
+                "earnings_per_share",
+                "dividend_payout_ratio_pct"
+            ]
+        },
+        "pros_cons": {
+            "rows": 16,
+            "columns": 4,
+            "missing_cells": 6,
+            "duplicate_rows": 0,
+            "columns_list": [
+                "id",
+                "company_id",
+                "pros",
+                "cons"
+            ]
+        },
+        "stock_prices": {
+            "rows": 5520,
+            "columns": 9,
+            "missing_cells": 0,
+            "duplicate_rows": 0,
+            "columns_list": [
+                "id",
+                "company_id",
+                "date",
+                "open_price",
+                "high_price",
+                "low_price",
+                "close_price",
+                "volume",
+                "adjusted_close"
+            ]
+        },
+        "documents": {
+            "rows": 1584,
+            "columns": 4,
+            "missing_cells": 52,
+            "duplicate_rows": 0,
+            "columns_list": [
+                "id",
+                "company_id",
+                "year",
+                "annual_report"
+            ]
+        }
+    },
+    "company_coverage": {
+        "company_identifier_column": "id",
+        "total_company_records": 92,
+        "unique_companies": 92,
+        "duplicate_company_ids": [],
+        "sectors": {
+            "unique_companies": 92,
+            "unknown_company_ids": [],
+            "companies_without_records": []
+        },
+        "peer_groups": {
+            "unique_companies": 56,
+            "unknown_company_ids": [],
+            "companies_without_records": [
+                "ABB",
+                "ADANIENSOL",
+                "ADANIENT",
+                "ADANIPORTS",
+                "AMBUJACEM",
+                "APOLLOHOSP",
+                "ASIANPAINT",
+                "ATGL",
+                "BAJAJFINSV",
+                "BAJAJHLDNG",
+                "BEL",
+                "BHARTIARTL",
+                "BHEL",
+                "BOSCHLTD",
+                "COALINDIA",
+                "DLF",
+                "DMART",
+                "GRASIM",
+                "HAL",
+                "HAVELLS",
+                "ICICIGI",
+                "INDIGO",
+                "IRCTC",
+                "IRFC",
+                "JIOFIN",
+                "LODHA",
+                "LT",
+                "MOTHERSON",
+                "NAUKRI",
+                "PFC",
+                "PIDILITIND",
+                "RECLTD",
+                "SHREECEM",
+                "SIEMENS",
+                "TITAN",
+                "TRENT"
+            ]
+        },
+        "analysis": {
+            "unique_companies": 5,
+            "unknown_company_ids": [
+                "WIPRO"
+            ],
+            "companies_without_records": [
+                "ABB",
+                "ADANIENSOL",
+                "ADANIENT",
+                "ADANIGREEN",
+                "ADANIPORTS",
+                "ADANIPOWER",
+                "AMBUJACEM",
+                "APOLLOHOSP",
+                "ASIANPAINT",
+                "ATGL",
+                "AXISBANK",
+                "BAJAJ-AUTO",
+                "BAJAJFINSV",
+                "BAJAJHLDNG",
+                "BAJFINANCE",
+                "BANKBARODA",
+                "BEL",
+                "BHARTIARTL",
+                "BHEL",
+                "BOSCHLTD",
+                "BPCL",
+                "BRITANNIA",
+                "CANBK",
+                "CHOLAFIN",
+                "CIPLA",
+                "COALINDIA",
+                "DABUR",
+                "DIVISLAB",
+                "DLF",
+                "DMART",
+                "DRREDDY",
+                "EICHERMOT",
+                "GAIL",
+                "GODREJCP",
+                "GRASIM",
+                "HAL",
+                "HAVELLS",
+                "HCLTECH",
+                "HDFCLIFE",
+                "HEROMOTOCO",
+                "HINDALCO",
+                "HINDUNILVR",
+                "ICICIBANK",
+                "ICICIGI",
+                "ICICIPRULI",
+                "INDIGO",
+                "INDUSINDBK",
+                "IOC",
+                "IRCTC",
+                "IRFC",
+                "ITC",
+                "JINDALSTEL",
+                "JIOFIN",
+                "JSWENERGY",
+                "JSWSTEEL",
+                "KOTAKBANK",
+                "LICI",
+                "LODHA",
+                "LT",
+                "LTIM",
+                "M&M",
+                "MARUTI",
+                "MOTHERSON",
+                "NAUKRI",
+                "NESTLEIND",
+                "NHPC",
+                "NTPC",
+                "ONGC",
+                "PFC",
+                "PIDILITIND",
+                "PNB",
+                "POWERGRID",
+                "RECLTD",
+                "RELIANCE",
+                "SBIN",
+                "SHREECEM",
+                "SHRIRAMFIN",
+                "SIEMENS",
+                "SUNPHARMA",
+                "TATACONSUM",
+                "TATAMOTORS",
+                "TATAPOWER",
+                "TATASTEEL",
+                "TECHM",
+                "TITAN",
+                "TORNTPHARM",
+                "TRENT",
+                "TVSMOTOR"
+            ]
+        },
+        "balance_sheet": {
+            "unique_companies": 98,
+            "unknown_company_ids": [
+                "ULTRACEMCO",
+                "UNIONBANK",
+                "UNITDSPR",
+                "VEDL",
+                "WIPRO",
+                "ZOMATO",
+                "ZYDUSLIFE"
+            ],
+            "companies_without_records": [
+                "SBIN"
+            ]
+        },
+        "cash_flow": {
+            "unique_companies": 100,
+            "unknown_company_ids": [
+                "AGTL",
+                "ULTRACEMCO",
+                "UNIONBANK",
+                "UNITDSPR",
+                "VBL",
+                "VEDL",
+                "WIPRO",
+                "ZOMATO",
+                "ZYDUSLIFE"
+            ],
+            "companies_without_records": [
+                "ATGL"
+            ]
+        },
+        "financial_ratios": {
+            "unique_companies": 92,
+            "unknown_company_ids": [
+                "ULTRACEMCO",
+                "UNIONBANK"
+            ],
+            "companies_without_records": [
+                "ATGL",
+                "SBIN"
+            ]
+        },
+        "market_cap": {
+            "unique_companies": 92,
+            "unknown_company_ids": [],
+            "companies_without_records": []
+        },
+        "profit_loss": {
+            "unique_companies": 100,
+            "unknown_company_ids": [
+                "ULTRACEMCO",
+                "UNIONBANK",
+                "UNITDSPR",
+                "VBL",
+                "VEDL",
+                "WIPRO",
+                "ZOMATO",
+                "ZYDUSLIFE"
+            ],
+            "companies_without_records": []
+        },
+        "pros_cons": {
+            "unique_companies": 5,
+            "unknown_company_ids": [
+                "WIPRO"
+            ],
+            "companies_without_records": [
+                "ABB",
+                "ADANIENSOL",
+                "ADANIENT",
+                "ADANIGREEN",
+                "ADANIPORTS",
+                "ADANIPOWER",
+                "AMBUJACEM",
+                "APOLLOHOSP",
+                "ASIANPAINT",
+                "ATGL",
+                "AXISBANK",
+                "BAJAJ-AUTO",
+                "BAJAJFINSV",
+                "BAJAJHLDNG",
+                "BAJFINANCE",
+                "BANKBARODA",
+                "BEL",
+                "BHARTIARTL",
+                "BHEL",
+                "BOSCHLTD",
+                "BPCL",
+                "BRITANNIA",
+                "CANBK",
+                "CHOLAFIN",
+                "CIPLA",
+                "COALINDIA",
+                "DABUR",
+                "DIVISLAB",
+                "DLF",
+                "DMART",
+                "DRREDDY",
+                "EICHERMOT",
+                "GAIL",
+                "GODREJCP",
+                "GRASIM",
+                "HAL",
+                "HAVELLS",
+                "HCLTECH",
+                "HDFCLIFE",
+                "HEROMOTOCO",
+                "HINDALCO",
+                "HINDUNILVR",
+                "ICICIBANK",
+                "ICICIGI",
+                "ICICIPRULI",
+                "INDIGO",
+                "INDUSINDBK",
+                "IOC",
+                "IRCTC",
+                "IRFC",
+                "ITC",
+                "JINDALSTEL",
+                "JIOFIN",
+                "JSWENERGY",
+                "JSWSTEEL",
+                "KOTAKBANK",
+                "LICI",
+                "LODHA",
+                "LT",
+                "LTIM",
+                "M&M",
+                "MARUTI",
+                "MOTHERSON",
+                "NAUKRI",
+                "NESTLEIND",
+                "NHPC",
+                "NTPC",
+                "ONGC",
+                "PFC",
+                "PIDILITIND",
+                "PNB",
+                "POWERGRID",
+                "RECLTD",
+                "RELIANCE",
+                "SBIN",
+                "SHREECEM",
+                "SHRIRAMFIN",
+                "SIEMENS",
+                "SUNPHARMA",
+                "TATACONSUM",
+                "TATAMOTORS",
+                "TATAPOWER",
+                "TATASTEEL",
+                "TECHM",
+                "TITAN",
+                "TORNTPHARM",
+                "TRENT",
+                "TVSMOTOR"
+            ]
+        },
+        "stock_prices": {
+            "unique_companies": 92,
+            "unknown_company_ids": [],
+            "companies_without_records": []
+        },
+        "documents": {
+            "unique_companies": 99,
+            "unknown_company_ids": [
+                "ULTRACEMCO",
+                "UNIONBANK",
+                "UNITDSPR",
+                "VBL",
+                "VEDL",
+                "WIPRO",
+                "ZOMATO",
+                "ZYDUSLIFE"
+            ],
+            "companies_without_records": [
+                "DIVISLAB"
+            ]
+        }
+    },
+    "duplicate_analysis": {
+        "balance_sheet": {
+            "keys": [
+                "company_id",
+                "year"
+            ],
+            "duplicate_rows": 0,
+            "duplicate_groups": 0
+        },
+        "cash_flow": {
+            "keys": [
+                "company_id",
+                "year"
+            ],
+            "duplicate_rows": 0,
+            "duplicate_groups": 0
+        },
+        "financial_ratios": {
+            "keys": [
+                "company_id",
+                "year"
+            ],
+            "duplicate_rows": 0,
+            "duplicate_groups": 0
+        },
+        "profit_loss": {
+            "keys": [
+                "company_id",
+                "year"
+            ],
+            "duplicate_rows": 0,
+            "duplicate_groups": 0
+        },
+        "market_cap": {
+            "keys": [
+                "company_id",
+                "year"
+            ],
+            "duplicate_rows": 0,
+            "duplicate_groups": 0
+        },
+        "documents": {
+            "keys": [
+                "company_id",
+                "year"
+            ],
+            "duplicate_rows": 0,
+            "duplicate_groups": 0
+        },
+        "stock_prices": {
+            "keys": [
+                "company_id",
+                "date"
+            ],
+            "duplicate_rows": 0,
+            "duplicate_groups": 0
+        }
+    },
+    "financial_integrity": {
+        "profit_loss": {
+            "negative_values": {
+                "sales": 0,
+                "operating_profit": 41,
+                "profit_before_tax": 71,
+                "net_profit": 78
+            }
+        },
+        "balance_sheet": {
+            "accounting_mismatch_rows": 0
+        },
+        "market_cap": {
+            "negative_values": {
+                "market_cap_crore": 0,
+                "enterprise_value_crore": 0,
+                "pe_ratio": 0,
+                "pb_ratio": 0,
+                "ev_ebitda": 0
+            }
+        },
+        "financial_ratios": {
+            "net_profit_margin_pct": {
+                "lower_bound": -1000,
+                "upper_bound": 1000,
+                "invalid_count": 0
+            },
+            "operating_profit_margin_pct": {
+                "lower_bound": -1000,
+                "upper_bound": 1000,
+                "invalid_count": 172
+            },
+            "return_on_equity_pct": {
+                "lower_bound": -1000,
+                "upper_bound": 1000,
+                "invalid_count": 27
+            },
+            "debt_to_equity": {
+                "lower_bound": -100,
+                "upper_bound": 100,
+                "invalid_count": 2
+            },
+            "interest_coverage": {
+                "lower_bound": -1000,
+                "upper_bound": 10000,
+                "invalid_count": 3
+            },
+            "asset_turnover": {
+                "lower_bound": -100,
+                "upper_bound": 1000,
+                "invalid_count": 0
+            },
+            "dividend_payout_ratio_pct": {
+                "lower_bound": -1000,
+                "upper_bound": 1000,
+                "invalid_count": 0
+            }
+        }
+    },
+    "stock_price_integrity": {
+        "open_price": {
+            "invalid_or_zero": 0,
+            "missing": 0
+        },
+        "high_price": {
+            "invalid_or_zero": 0,
+            "missing": 0
+        },
+        "low_price": {
+            "invalid_or_zero": 0,
+            "missing": 0
+        },
+        "close_price": {
+            "invalid_or_zero": 0,
+            "missing": 0
+        },
+        "adjusted_close": {
+            "invalid_or_zero": 0,
+            "missing": 0
+        },
+        "invalid_ohlc_rows": 120
+    },
+    "cross_dataset_integrity": {
+        "profit_loss_history": {
+            "minimum_years": 2,
+            "median_years": 12.0,
+            "maximum_years": 12
+        },
+        "balance_sheet_history": {
+            "minimum_years": 2,
+            "median_years": 12.0,
+            "maximum_years": 12
+        },
+        "cash_flow_history": {
+            "minimum_years": 2,
+            "median_years": 12.0,
+            "maximum_years": 13
+        },
+        "financial_ratios_history": {
+            "minimum_years": 2,
+            "median_years": 12.0,
+            "maximum_years": 12
+        },
+        "market_cap_history": {
+            "minimum_years": 6,
+            "median_years": 6.0,
+            "maximum_years": 6
+        },
+        "profit_loss_company_year_keys": 1263,
+        "balance_sheet_company_year_keys": 1137,
+        "cash_flow_company_year_keys": 1153,
+        "financial_ratios_company_year_keys": 1065,
+        "market_cap_company_year_keys": 552
+    },
+    "warnings": []
+}

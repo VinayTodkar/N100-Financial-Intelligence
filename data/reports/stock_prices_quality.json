@@ -1,0 +1,29 @@
+{
+    "dataset": "stock_prices",
+    "source_file": "1788762868790-cad88447-stock_prices.xlsx",
+    "processed_at": "2026-09-10T15:52:21.618299",
+    "status": "SUCCESS",
+    "original_rows": 5520,
+    "final_rows": 5520,
+    "original_columns": 9,
+    "final_columns": 9,
+    "empty_rows_removed": 0,
+    "duplicate_rows_removed": 0,
+    "missing_cells": 0,
+    "missing_percentage": 0.0,
+    "columns": [
+        "id",
+        "company_id",
+        "date",
+        "open_price",
+        "high_price",
+        "low_price",
+        "close_price",
+        "volume",
+        "adjusted_close"
+    ],
+    "missing_by_column": {},
+    "csv_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\stock_prices_clean.csv",
+    "parquet_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\stock_prices_clean.parquet",
+    "parquet_status": "created"
+}

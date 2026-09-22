@@ -1,0 +1,73 @@
+{
+    "dataset": "financial_ratios",
+    "source_file": "1788762866387-cf240e48-financial_ratios.xlsx",
+    "processed_at": "2026-09-10T15:52:18.564565",
+    "status": "SUCCESS",
+    "original_rows": 1184,
+    "final_rows": 1065,
+    "original_columns": 16,
+    "final_columns": 16,
+    "empty_rows_removed": 0,
+    "duplicate_rows_removed": 119,
+    "missing_cells": 72,
+    "missing_percentage": 0.42,
+    "columns": [
+        "id",
+        "company_id",
+        "year",
+        "net_profit_margin_pct",
+        "operating_profit_margin_pct",
+        "return_on_equity_pct",
+        "debt_to_equity",
+        "interest_coverage",
+        "asset_turnover",
+        "free_cash_flow_cr",
+        "capex_cr",
+        "earnings_per_share",
+        "book_value_per_share",
+        "dividend_payout_ratio_pct",
+        "total_debt_cr",
+        "cash_from_operations_cr"
+    ],
+    "missing_by_column": {
+        "net_profit_margin_pct": {
+            "missing": 1,
+            "percentage": 0.09
+        },
+        "operating_profit_margin_pct": {
+            "missing": 13,
+            "percentage": 1.22
+        },
+        "interest_coverage": {
+            "missing": 43,
+            "percentage": 4.04
+        },
+        "asset_turnover": {
+            "missing": 1,
+            "percentage": 0.09
+        },
+        "free_cash_flow_cr": {
+            "missing": 2,
+            "percentage": 0.19
+        },
+        "capex_cr": {
+            "missing": 2,
+            "percentage": 0.19
+        },
+        "earnings_per_share": {
+            "missing": 4,
+            "percentage": 0.38
+        },
+        "dividend_payout_ratio_pct": {
+            "missing": 4,
+            "percentage": 0.38
+        },
+        "cash_from_operations_cr": {
+            "missing": 2,
+            "percentage": 0.19
+        }
+    },
+    "csv_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\financial_ratios_clean.csv",
+    "parquet_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\financial_ratios_clean.parquet",
+    "parquet_status": "created"
+}

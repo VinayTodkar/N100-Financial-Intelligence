@@ -1,0 +1,60 @@
+{
+    "dataset": "profit_loss",
+    "source_file": "1788762867510-1e081726-profitandloss.xlsx",
+    "processed_at": "2026-09-10T15:52:19.817373",
+    "status": "SUCCESS",
+    "original_rows": 1276,
+    "final_rows": 1263,
+    "original_columns": 15,
+    "final_columns": 15,
+    "empty_rows_removed": 0,
+    "duplicate_rows_removed": 13,
+    "missing_cells": 328,
+    "missing_percentage": 1.73,
+    "columns": [
+        "id",
+        "company_id",
+        "year",
+        "sales",
+        "expenses",
+        "operating_profit",
+        "operating_profit_margin_pct",
+        "other_income",
+        "interest_expense",
+        "depreciation",
+        "profit_before_tax",
+        "tax_percentage",
+        "net_profit",
+        "earnings_per_share",
+        "dividend_payout_ratio_pct"
+    ],
+    "missing_by_column": {
+        "year": {
+            "missing": 99,
+            "percentage": 7.84
+        },
+        "operating_profit": {
+            "missing": 13,
+            "percentage": 1.03
+        },
+        "operating_profit_margin_pct": {
+            "missing": 15,
+            "percentage": 1.19
+        },
+        "tax_percentage": {
+            "missing": 94,
+            "percentage": 7.44
+        },
+        "earnings_per_share": {
+            "missing": 5,
+            "percentage": 0.4
+        },
+        "dividend_payout_ratio_pct": {
+            "missing": 102,
+            "percentage": 8.08
+        }
+    },
+    "csv_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\profit_loss_clean.csv",
+    "parquet_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\profit_loss_clean.parquet",
+    "parquet_status": "created"
+}

@@ -1,0 +1,29 @@
+{
+    "dataset": "market_cap",
+    "source_file": "1788762866647-ef478eba-market_cap.xlsx",
+    "processed_at": "2026-09-10T15:52:18.942272",
+    "status": "SUCCESS",
+    "original_rows": 552,
+    "final_rows": 552,
+    "original_columns": 9,
+    "final_columns": 9,
+    "empty_rows_removed": 0,
+    "duplicate_rows_removed": 0,
+    "missing_cells": 0,
+    "missing_percentage": 0.0,
+    "columns": [
+        "id",
+        "company_id",
+        "year",
+        "market_cap_crore",
+        "enterprise_value_crore",
+        "pe_ratio",
+        "pb_ratio",
+        "ev_ebitda",
+        "dividend_yield_pct"
+    ],
+    "missing_by_column": {},
+    "csv_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\market_cap_clean.csv",
+    "parquet_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\market_cap_clean.parquet",
+    "parquet_status": "created"
+}

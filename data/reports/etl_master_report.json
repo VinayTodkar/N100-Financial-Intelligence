@@ -1,0 +1,481 @@
+{
+    "project": "N100 Financial Intelligence",
+    "stage": "Phase 2 - Data Cleaning",
+    "processed_at": "2026-09-10T15:52:21.620352",
+    "datasets_expected": 12,
+    "datasets_successful": 12,
+    "datasets_failed": 0,
+    "datasets": [
+        {
+            "dataset": "analysis",
+            "source_file": "1788762864312-043e704b-analysis.xlsx",
+            "processed_at": "2026-09-10T15:52:14.051455",
+            "status": "SUCCESS",
+            "original_rows": 20,
+            "final_rows": 20,
+            "original_columns": 6,
+            "final_columns": 6,
+            "empty_rows_removed": 0,
+            "duplicate_rows_removed": 0,
+            "missing_cells": 0,
+            "missing_percentage": 0.0,
+            "columns": [
+                "id",
+                "company_id",
+                "compounded_sales_growth",
+                "compounded_profit_growth",
+                "stock_price_cagr",
+                "roe"
+            ],
+            "missing_by_column": {},
+            "csv_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\analysis_clean.csv",
+            "parquet_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\analysis_clean.parquet",
+            "parquet_status": "created"
+        },
+        {
+            "dataset": "balance_sheet",
+            "source_file": "1788762864608-bfd01cdc-balancesheet.xlsx",
+            "processed_at": "2026-09-10T15:52:14.602197",
+            "status": "SUCCESS",
+            "original_rows": 1312,
+            "final_rows": 1137,
+            "original_columns": 13,
+            "final_columns": 13,
+            "empty_rows_removed": 0,
+            "duplicate_rows_removed": 175,
+            "missing_cells": 0,
+            "missing_percentage": 0.0,
+            "columns": [
+                "id",
+                "company_id",
+                "year",
+                "equity_capital",
+                "reserves",
+                "borrowings",
+                "other_liabilities",
+                "total_liabilities",
+                "fixed_assets",
+                "capital_work_in_progress",
+                "investments",
+                "other_assets",
+                "total_assets"
+            ],
+            "missing_by_column": {},
+            "csv_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\balance_sheet_clean.csv",
+            "parquet_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\balance_sheet_clean.parquet",
+            "parquet_status": "created"
+        },
+        {
+            "dataset": "cash_flow",
+            "source_file": "1788762864958-0ce02a2d-cashflow.xlsx",
+            "processed_at": "2026-09-10T15:52:15.034697",
+            "status": "SUCCESS",
+            "original_rows": 1187,
+            "final_rows": 1153,
+            "original_columns": 7,
+            "final_columns": 7,
+            "empty_rows_removed": 0,
+            "duplicate_rows_removed": 34,
+            "missing_cells": 8,
+            "missing_percentage": 0.1,
+            "columns": [
+                "id",
+                "company_id",
+                "year",
+                "operating_cash_flow",
+                "investing_cash_flow",
+                "financing_cash_flow",
+                "net_cash_flow"
+            ],
+            "missing_by_column": {
+                "operating_cash_flow": {
+                    "missing": 2,
+                    "percentage": 0.17
+                },
+                "investing_cash_flow": {
+                    "missing": 2,
+                    "percentage": 0.17
+                },
+                "financing_cash_flow": {
+                    "missing": 2,
+                    "percentage": 0.17
+                },
+                "net_cash_flow": {
+                    "missing": 2,
+                    "percentage": 0.17
+                }
+            },
+            "csv_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\cash_flow_clean.csv",
+            "parquet_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\cash_flow_clean.parquet",
+            "parquet_status": "created"
+        },
+        {
+            "dataset": "companies",
+            "source_file": "1788762865623-4d1eef48-companies.xlsx",
+            "processed_at": "2026-09-10T15:52:15.917634",
+            "status": "SUCCESS",
+            "original_rows": 92,
+            "final_rows": 92,
+            "original_columns": 12,
+            "final_columns": 12,
+            "empty_rows_removed": 0,
+            "duplicate_rows_removed": 0,
+            "missing_cells": 9,
+            "missing_percentage": 0.82,
+            "columns": [
+                "id",
+                "company_logo",
+                "company_name",
+                "chart_link",
+                "about_company",
+                "website",
+                "nse_profile",
+                "bse_profile",
+                "face_value",
+                "book_value",
+                "roce_percentage",
+                "roe_percentage"
+            ],
+            "missing_by_column": {
+                "company_logo": {
+                    "missing": 1,
+                    "percentage": 1.09
+                },
+                "website": {
+                    "missing": 1,
+                    "percentage": 1.09
+                },
+                "nse_profile": {
+                    "missing": 1,
+                    "percentage": 1.09
+                },
+                "bse_profile": {
+                    "missing": 1,
+                    "percentage": 1.09
+                },
+                "face_value": {
+                    "missing": 1,
+                    "percentage": 1.09
+                },
+                "book_value": {
+                    "missing": 1,
+                    "percentage": 1.09
+                },
+                "roce_percentage": {
+                    "missing": 1,
+                    "percentage": 1.09
+                },
+                "roe_percentage": {
+                    "missing": 2,
+                    "percentage": 2.17
+                }
+            },
+            "csv_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\companies_clean.csv",
+            "parquet_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\companies_clean.parquet",
+            "parquet_status": "created"
+        },
+        {
+            "dataset": "documents",
+            "source_file": "1788762865915-d9b538e7-documents.xlsx",
+            "processed_at": "2026-09-10T15:52:17.082592",
+            "status": "SUCCESS",
+            "original_rows": 1585,
+            "final_rows": 1584,
+            "original_columns": 4,
+            "final_columns": 4,
+            "empty_rows_removed": 0,
+            "duplicate_rows_removed": 1,
+            "missing_cells": 52,
+            "missing_percentage": 0.82,
+            "columns": [
+                "id",
+                "company_id",
+                "year",
+                "annual_report"
+            ],
+            "missing_by_column": {
+                "annual_report": {
+                    "missing": 52,
+                    "percentage": 3.28
+                }
+            },
+            "csv_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\documents_clean.csv",
+            "parquet_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\documents_clean.parquet",
+            "parquet_status": "created"
+        },
+        {
+            "dataset": "financial_ratios",
+            "source_file": "1788762866387-cf240e48-financial_ratios.xlsx",
+            "processed_at": "2026-09-10T15:52:18.564565",
+            "status": "SUCCESS",
+            "original_rows": 1184,
+            "final_rows": 1065,
+            "original_columns": 16,
+            "final_columns": 16,
+            "empty_rows_removed": 0,
+            "duplicate_rows_removed": 119,
+            "missing_cells": 72,
+            "missing_percentage": 0.42,
+            "columns": [
+                "id",
+                "company_id",
+                "year",
+                "net_profit_margin_pct",
+                "operating_profit_margin_pct",
+                "return_on_equity_pct",
+                "debt_to_equity",
+                "interest_coverage",
+                "asset_turnover",
+                "free_cash_flow_cr",
+                "capex_cr",
+                "earnings_per_share",
+                "book_value_per_share",
+                "dividend_payout_ratio_pct",
+                "total_debt_cr",
+                "cash_from_operations_cr"
+            ],
+            "missing_by_column": {
+                "net_profit_margin_pct": {
+                    "missing": 1,
+                    "percentage": 0.09
+                },
+                "operating_profit_margin_pct": {
+                    "missing": 13,
+                    "percentage": 1.22
+                },
+                "interest_coverage": {
+                    "missing": 43,
+                    "percentage": 4.04
+                },
+                "asset_turnover": {
+                    "missing": 1,
+                    "percentage": 0.09
+                },
+                "free_cash_flow_cr": {
+                    "missing": 2,
+                    "percentage": 0.19
+                },
+                "capex_cr": {
+                    "missing": 2,
+                    "percentage": 0.19
+                },
+                "earnings_per_share": {
+                    "missing": 4,
+                    "percentage": 0.38
+                },
+                "dividend_payout_ratio_pct": {
+                    "missing": 4,
+                    "percentage": 0.38
+                },
+                "cash_from_operations_cr": {
+                    "missing": 2,
+                    "percentage": 0.19
+                }
+            },
+            "csv_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\financial_ratios_clean.csv",
+            "parquet_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\financial_ratios_clean.parquet",
+            "parquet_status": "created"
+        },
+        {
+            "dataset": "market_cap",
+            "source_file": "1788762866647-ef478eba-market_cap.xlsx",
+            "processed_at": "2026-09-10T15:52:18.942272",
+            "status": "SUCCESS",
+            "original_rows": 552,
+            "final_rows": 552,
+            "original_columns": 9,
+            "final_columns": 9,
+            "empty_rows_removed": 0,
+            "duplicate_rows_removed": 0,
+            "missing_cells": 0,
+            "missing_percentage": 0.0,
+            "columns": [
+                "id",
+                "company_id",
+                "year",
+                "market_cap_crore",
+                "enterprise_value_crore",
+                "pe_ratio",
+                "pb_ratio",
+                "ev_ebitda",
+                "dividend_yield_pct"
+            ],
+            "missing_by_column": {},
+            "csv_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\market_cap_clean.csv",
+            "parquet_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\market_cap_clean.parquet",
+            "parquet_status": "created"
+        },
+        {
+            "dataset": "peer_groups",
+            "source_file": "1788762867180-9770712c-peer_groups.xlsx",
+            "processed_at": "2026-09-10T15:52:19.038905",
+            "status": "SUCCESS",
+            "original_rows": 56,
+            "final_rows": 56,
+            "original_columns": 4,
+            "final_columns": 4,
+            "empty_rows_removed": 0,
+            "duplicate_rows_removed": 0,
+            "missing_cells": 0,
+            "missing_percentage": 0.0,
+            "columns": [
+                "id",
+                "peer_group_name",
+                "company_id",
+                "is_benchmark"
+            ],
+            "missing_by_column": {},
+            "csv_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\peer_groups_clean.csv",
+            "parquet_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\peer_groups_clean.parquet",
+            "parquet_status": "created"
+        },
+        {
+            "dataset": "profit_loss",
+            "source_file": "1788762867510-1e081726-profitandloss.xlsx",
+            "processed_at": "2026-09-10T15:52:19.817373",
+            "status": "SUCCESS",
+            "original_rows": 1276,
+            "final_rows": 1263,
+            "original_columns": 15,
+            "final_columns": 15,
+            "empty_rows_removed": 0,
+            "duplicate_rows_removed": 13,
+            "missing_cells": 328,
+            "missing_percentage": 1.73,
+            "columns": [
+                "id",
+                "company_id",
+                "year",
+                "sales",
+                "expenses",
+                "operating_profit",
+                "operating_profit_margin_pct",
+                "other_income",
+                "interest_expense",
+                "depreciation",
+                "profit_before_tax",
+                "tax_percentage",
+                "net_profit",
+                "earnings_per_share",
+                "dividend_payout_ratio_pct"
+            ],
+            "missing_by_column": {
+                "year": {
+                    "missing": 99,
+                    "percentage": 7.84
+                },
+                "operating_profit": {
+                    "missing": 13,
+                    "percentage": 1.03
+                },
+                "operating_profit_margin_pct": {
+                    "missing": 15,
+                    "percentage": 1.19
+                },
+                "tax_percentage": {
+                    "missing": 94,
+                    "percentage": 7.44
+                },
+                "earnings_per_share": {
+                    "missing": 5,
+                    "percentage": 0.4
+                },
+                "dividend_payout_ratio_pct": {
+                    "missing": 102,
+                    "percentage": 8.08
+                }
+            },
+            "csv_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\profit_loss_clean.csv",
+            "parquet_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\profit_loss_clean.parquet",
+            "parquet_status": "created"
+        },
+        {
+            "dataset": "pros_cons",
+            "source_file": "1788762867755-c9667c6b-prosandcons.xlsx",
+            "processed_at": "2026-09-10T15:52:19.949679",
+            "status": "SUCCESS",
+            "original_rows": 16,
+            "final_rows": 16,
+            "original_columns": 4,
+            "final_columns": 4,
+            "empty_rows_removed": 0,
+            "duplicate_rows_removed": 0,
+            "missing_cells": 6,
+            "missing_percentage": 9.38,
+            "columns": [
+                "id",
+                "company_id",
+                "pros",
+                "cons"
+            ],
+            "missing_by_column": {
+                "pros": {
+                    "missing": 5,
+                    "percentage": 31.25
+                },
+                "cons": {
+                    "missing": 1,
+                    "percentage": 6.25
+                }
+            },
+            "csv_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\pros_cons_clean.csv",
+            "parquet_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\pros_cons_clean.parquet",
+            "parquet_status": "created"
+        },
+        {
+            "dataset": "sectors",
+            "source_file": "1788762868161-df5e6a41-sectors.xlsx",
+            "processed_at": "2026-09-10T15:52:20.081247",
+            "status": "SUCCESS",
+            "original_rows": 92,
+            "final_rows": 92,
+            "original_columns": 6,
+            "final_columns": 6,
+            "empty_rows_removed": 0,
+            "duplicate_rows_removed": 0,
+            "missing_cells": 0,
+            "missing_percentage": 0.0,
+            "columns": [
+                "id",
+                "company_id",
+                "broad_sector",
+                "sub_sector",
+                "index_weight_pct",
+                "market_cap_category"
+            ],
+            "missing_by_column": {},
+            "csv_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\sectors_clean.csv",
+            "parquet_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\sectors_clean.parquet",
+            "parquet_status": "created"
+        },
+        {
+            "dataset": "stock_prices",
+            "source_file": "1788762868790-cad88447-stock_prices.xlsx",
+            "processed_at": "2026-09-10T15:52:21.618299",
+            "status": "SUCCESS",
+            "original_rows": 5520,
+            "final_rows": 5520,
+            "original_columns": 9,
+            "final_columns": 9,
+            "empty_rows_removed": 0,
+            "duplicate_rows_removed": 0,
+            "missing_cells": 0,
+            "missing_percentage": 0.0,
+            "columns": [
+                "id",
+                "company_id",
+                "date",
+                "open_price",
+                "high_price",
+                "low_price",
+                "close_price",
+                "volume",
+                "adjusted_close"
+            ],
+            "missing_by_column": {},
+            "csv_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\stock_prices_clean.csv",
+            "parquet_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\stock_prices_clean.parquet",
+            "parquet_status": "created"
+        }
+    ]
+}

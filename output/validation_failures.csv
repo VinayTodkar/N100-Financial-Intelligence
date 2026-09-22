@@ -1,0 +1,8 @@
+rule,severity,message,rows,dataset
+DQ-06,WARNING,Sales/revenue contains zero or negative values.,1,profit_loss_clean.parquet
+DQ-11,WARNING,EPS sign is inconsistent with net profit sign.,3,profit_loss_clean.parquet
+DQ-14,WARNING,1 companies have fewer than 5 years.,1,profit_loss_clean.parquet
+DQ-15,WARNING,Required data contains 99 null values.,99,profit_loss_clean.parquet
+DQ-14,WARNING,1 companies have fewer than 5 years.,1,balance_sheet_clean.parquet
+DQ-14,WARNING,1 companies have fewer than 5 years.,1,cash_flow_clean.parquet
+DQ-14,WARNING,1 companies have fewer than 5 years.,1,financial_ratios_clean.parquet

@@ -1,0 +1,26 @@
+{
+    "dataset": "analysis",
+    "source_file": "1788762864312-043e704b-analysis.xlsx",
+    "processed_at": "2026-09-10T15:52:14.051455",
+    "status": "SUCCESS",
+    "original_rows": 20,
+    "final_rows": 20,
+    "original_columns": 6,
+    "final_columns": 6,
+    "empty_rows_removed": 0,
+    "duplicate_rows_removed": 0,
+    "missing_cells": 0,
+    "missing_percentage": 0.0,
+    "columns": [
+        "id",
+        "company_id",
+        "compounded_sales_growth",
+        "compounded_profit_growth",
+        "stock_price_cagr",
+        "roe"
+    ],
+    "missing_by_column": {},
+    "csv_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\analysis_clean.csv",
+    "parquet_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\analysis_clean.parquet",
+    "parquet_status": "created"
+}

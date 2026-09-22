@@ -1,0 +1,26 @@
+{
+    "dataset": "sectors",
+    "source_file": "1788762868161-df5e6a41-sectors.xlsx",
+    "processed_at": "2026-09-10T15:52:20.081247",
+    "status": "SUCCESS",
+    "original_rows": 92,
+    "final_rows": 92,
+    "original_columns": 6,
+    "final_columns": 6,
+    "empty_rows_removed": 0,
+    "duplicate_rows_removed": 0,
+    "missing_cells": 0,
+    "missing_percentage": 0.0,
+    "columns": [
+        "id",
+        "company_id",
+        "broad_sector",
+        "sub_sector",
+        "index_weight_pct",
+        "market_cap_category"
+    ],
+    "missing_by_column": {},
+    "csv_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\sectors_clean.csv",
+    "parquet_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\sectors_clean.parquet",
+    "parquet_status": "created"
+}

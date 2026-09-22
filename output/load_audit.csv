@@ -1,0 +1,12 @@
+table_name,row_count,status
+companies,92,LOADED
+sectors,10,LOADED
+profitandloss,1073,LOADED
+balancesheet,1058,LOADED
+cashflow,1064,LOADED
+financial_ratios,1041,LOADED
+stock_prices,5520,LOADED
+documents,1456,LOADED
+prosandcons,24,LOADED
+peer_groups,248,LOADED
+analysis,0,LOADED

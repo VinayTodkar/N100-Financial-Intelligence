@@ -1,0 +1,24 @@
+{
+    "dataset": "peer_groups",
+    "source_file": "1788762867180-9770712c-peer_groups.xlsx",
+    "processed_at": "2026-09-10T15:52:19.038905",
+    "status": "SUCCESS",
+    "original_rows": 56,
+    "final_rows": 56,
+    "original_columns": 4,
+    "final_columns": 4,
+    "empty_rows_removed": 0,
+    "duplicate_rows_removed": 0,
+    "missing_cells": 0,
+    "missing_percentage": 0.0,
+    "columns": [
+        "id",
+        "peer_group_name",
+        "company_id",
+        "is_benchmark"
+    ],
+    "missing_by_column": {},
+    "csv_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\peer_groups_clean.csv",
+    "parquet_output": "C:\\Users\\VINAY SUNIL TODKAR\\OneDrive\\Desktop\\Projects\\N100-Financial-Intelligence\\data\\processed\\peer_groups_clean.parquet",
+    "parquet_status": "created"
+}

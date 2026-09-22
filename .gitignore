@@ -1,0 +1,22 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+.env
+
+# Local database
+nifty100.db
+
+# Raw source datasets
+data/raw/
+
+# Generated processed datasets
+data/processed/
+
+# Temporary validation script
+validate_sql.py
+
+# OS / IDE files
+.vscode/
+.idea/
+.DS_Store
