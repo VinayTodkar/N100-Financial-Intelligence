@@ -25,6 +25,21 @@ app.add_middleware(
 )
 
 
+@app.middleware("http")
+async def log_requests(request, call_next):
+    logger.info("Request started: %s %s", request.method, request.url.path)
+    try:
+        response = await call_next(request)
+        logger.info(
+            "Request completed: %s %s -> %s",
+            request.method, request.url.path, response.status_code
+        )
+        return response
+    except Exception:
+        logger.exception("Request failed: %s %s", request.method, request.url.path)
+        raise
+
+
 def query_db(sql, params=()):
     if not DB_PATH.exists():
         raise HTTPException(503, "SQLite database not found")
@@ -202,13 +217,54 @@ def openapi_export():
 
 @app.get("/api/companies/{company_id}/tearsheet/download")
 def download_tearsheet(company_id: int):
-    from fastapi.responses import JSONResponse
+    from io import BytesIO
+    from reportlab.lib.pagesizes import A4
+    from reportlab.pdfgen import canvas
+    from fastapi.responses import StreamingResponse
 
     data = tearsheet(company_id)
-    return JSONResponse(
-        content=data,
+    buffer = BytesIO()
+    pdf = canvas.Canvas(buffer, pagesize=A4)
+    page_width, page_height = A4
+    x, y = 50, page_height - 55
+
+    def write_line(text):
+        nonlocal y
+        text = str(text).encode("latin-1", "replace").decode("latin-1")
+        while len(text) > 95:
+            pdf.drawString(x, y, text[:95])
+            text = text[95:]
+            y -= 15
+            if y < 55:
+                pdf.showPage()
+                y = page_height - 55
+        pdf.drawString(x, y, text)
+        y -= 17
+        if y < 55:
+            pdf.showPage()
+            y = page_height - 55
+
+    write_line("N100 Financial Intelligence - Company Tearsheet")
+    write_line("=" * 55)
+    write_line("Company profile")
+    for key, value in data["company"].items():
+        write_line(f"{key}: {value}")
+    for section in ("profit_loss", "balance_sheet", "cashflow", "ratios"):
+        write_line("")
+        write_line(section.replace("_", " ").title())
+        records = data.get(section, [])
+        if not records:
+            write_line("No records available.")
+        for record in records:
+            write_line(" | ".join(f"{k}: {v}" for k, v in record.items()))
+    pdf.save()
+    buffer.seek(0)
+
+    return StreamingResponse(
+        buffer,
+        media_type="application/pdf",
         headers={
             "Content-Disposition":
-                f'attachment; filename="company_{company_id}_tearsheet.json"'
+                f'attachment; filename="company_{company_id}_tearsheet.pdf"'
         },
     )
